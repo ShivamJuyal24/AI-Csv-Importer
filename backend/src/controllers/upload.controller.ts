@@ -1,5 +1,5 @@
 import { Request, Response} from "express";
-
+import { parseCsv } from "../services/csv.service";
 export const uploadCsv = async(
     req: Request,
     res: Response
@@ -16,15 +16,12 @@ export const uploadCsv = async(
             return;
         }
 
-        
+        const rows = await parseCsv(file.buffer);
         res.status(200).json({
             success: true,
             message:"CSV recieved successfully.",
-            file:{
-                originalname: file.originalname,
-                size: file.size,
-                mimetype: file.mimetype,
-            },
+            totalRows: rows.length,
+            data: rows,
         });
     }catch(error){
         console.log("Upload Error:", error);
