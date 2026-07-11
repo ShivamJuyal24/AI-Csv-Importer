@@ -15,35 +15,36 @@ export async function processBatches(
     batches.push(rows.slice(i, i + batchSize));
   }
 
-  console.log(`Processing ${batches.length} batches sequentially`);
+  console.log(`Processing ${batches.length} batches in parallel`);
+
+  const settledResults = await Promise.allSettled(
+    batches.map((batch, index) => {
+      console.log(`Starting batch ${index + 1} (${batch.length} rows)`);
+      return extractLeads(batch);
+    })
+  );
 
   const allRecords: AIExtractionResult["records"] = [];
   const allSkipped: AIExtractionResult["skipped"] = [];
 
-  // Process one batch at a time (not in parallel) to stay under Groq's
-  // tokens-per-minute (TPM) limit. Firing all batches simultaneously can
-  // exceed TPM even when comfortably under the daily (TPD) limit.
-  for (let index = 0; index < batches.length; index++) {
-    const batch = batches[index];
-    console.log(`Starting batch ${index + 1} (${batch.length} rows)`);
-
-    try {
-      const result = await extractLeads(batch);
-      allRecords.push(...result.records);
-      allSkipped.push(...result.skipped);
-    } catch (error) {
-      console.error(`Batch ${index + 1} failed:`, error);
+  settledResults.forEach((result, index) => {
+    if (result.status === "fulfilled") {
+      allRecords.push(...result.value.records);
+      allSkipped.push(...result.value.skipped);
+    } else {
+      console.error(`Batch ${index + 1} failed:`, result.reason);
 
       // Don't silently lose rows if a batch fails — push them to skipped
       // with a clear reason so the user knows this happened.
-      batch.forEach((row) => {
+      const failedBatch = batches[index];
+      failedBatch.forEach((row) => {
         allSkipped.push({
           reason: "AI processing failed for this batch",
           record: row,
         });
       });
     }
-  }
+  });
 
   return {
     records: allRecords,
