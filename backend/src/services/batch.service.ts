@@ -9,21 +9,42 @@ export async function processBatches(
   rows: CSVRow[],
   batchSize: number = DEFAULT_BATCH_SIZE
 ): Promise<AIExtractionResult> {
-  const allRecords = [];
-  const allSkipped = [];
+  const batches: CSVRow[][] = [];
 
   for (let i = 0; i < rows.length; i += batchSize) {
-    const batch = rows.slice(i, i + batchSize);
-
-    console.log(
-      `Processing batch ${Math.floor(i / batchSize) + 1} (${batch.length} rows)`
-    );
-
-    const result = await extractLeads(batch);
-
-    allRecords.push(...result.records);
-    allSkipped.push(...result.skipped);
+    batches.push(rows.slice(i, i + batchSize));
   }
+
+  console.log(`Processing ${batches.length} batches in parallel`);
+
+  const settledResults = await Promise.allSettled(
+    batches.map((batch, index) => {
+      console.log(`Starting batch ${index + 1} (${batch.length} rows)`);
+      return extractLeads(batch);
+    })
+  );
+
+  const allRecords: AIExtractionResult["records"] = [];
+  const allSkipped: AIExtractionResult["skipped"] = [];
+
+  settledResults.forEach((result, index) => {
+    if (result.status === "fulfilled") {
+      allRecords.push(...result.value.records);
+      allSkipped.push(...result.value.skipped);
+    } else {
+      console.error(`Batch ${index + 1} failed:`, result.reason);
+
+      // Don't silently lose rows if a batch fails — push them to skipped
+      // with a clear reason so the user knows this happened.
+      const failedBatch = batches[index];
+      failedBatch.forEach((row) => {
+        allSkipped.push({
+          reason: "AI processing failed for this batch",
+          record: row,
+        });
+      });
+    }
+  });
 
   return {
     records: allRecords,

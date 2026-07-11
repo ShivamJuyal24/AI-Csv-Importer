@@ -1,5 +1,56 @@
-Full Name,Email,Phone,Company
-John Doe,john@gmail.com,+919876543210,Google
-Alice Smith,alice@gmail.com,9876543211,Microsoft
-Bob Brown,,9876543212,Amazon
-Unknown,,,
+Lead Name,Contact Email,Ph No,City,State,Source,Remarks,Enquiry Date,Owner Email
+Alok Iyer,alok.iyer0@gmail.com,9823756669 / 9139345092,Pune,Maharashtra,Leads on Demand Campaign,Requested payment plan details,05-12-2026,rahul@groweasy.ai
+Preeti Kumar,preeti.kumar1@gmail.com,9889089901,Jaipur,Rajasthan,Sarjapur Plots Form,Not interested in our services,08-Aug-2026,test@gmail.com
+Manoj Nair,manoj.nair2@gmail.com,9858181396 / 9171662963,Chennai,Tamil Nadu,Instagram,Asked to be removed from list,2026-02-13,rahul@groweasy.ai
+Nisha Rao,nisha.rao3@gmail.com,+91 9819335534,Jaipur,Rajasthan,Leads on Demand Campaign,"Very interested, follow up Monday",04/19/2026,test@gmail.com
+Sneha Iyer,sneha.iyer4@gmail.com,9857683626,Kolkata,West Bengal,Leads on Demand Campaign,Did not connect after 3 attempts,06/06/2026,priya@groweasy.ai
+Preeti Shah,,+91 9895899313,Jaipur,Rajasthan,Sarjapur Plots Form,Did not connect after 3 attempts,13-May-2026,rahul@groweasy.ai
+Varun Desai,,9852235350,Delhi,Delhi,Facebook,Did not connect after 3 attempts,2026-10-07,priya@groweasy.ai
+Krishnan Verma,,9867503414,Hyderabad,Telangana,Sarjapur Plots Form,"Payment completed, booking confirmed",10/24/2026,test@gmail.com
+Kavita Desai,,9866661351,Bangalore,Karnataka,Varah Swamy Site Visit,"Sale confirmed, possession expected by Dec 2026",26-11-2026,test@gmail.com
+Rakesh Iyer,,9868353204,Jaipur,Rajasthan,Leads on Demand Campaign,"Busy, try again later",05/04/2026,test@gmail.com
+Kirti Shah,kirti.shah10@gmail.com,,Jaipur,Rajasthan,Eden Park Enquiry,"Called twice, no response",11/27/2026,test@gmail.com
+Yash Kumar,yash.kumar11@gmail.com,,Kochi,Kerala,Instagram,"Did not pick up, will retry",2026-06-04,priya@groweasy.ai
+Isha Reddy,isha.reddy12@gmail.com,,Bangalore,Karnataka,Cold Call,Phone unreachable,22-08-2026,rahul@groweasy.ai
+Tarun Krishnan,tarun.krishnan13@gmail.com / tarun.krishnan13alt@outlook.com,,Kolkata,West Bengal,Instagram,Will call back next week,04-Apr-2026,priya@groweasy.ai
+Ramesh Rao,ramesh.rao14@gmail.com,,Pune,Maharashtra,Sarjapur Plots Form,Phone unreachable,2026-06-28,rahul@groweasy.ai
+Simran Singh,simran.singh15@gmail.com,9823009833,Ahmedabad,Gujarat,Sarjapur Plots Form,"Payment completed, booking confirmed",07-Feb-2026,priya@groweasy.ai
+Rakesh Iyer,rakesh.iyer16@gmail.com,9843374088 / 9134627347,Pune,Maharashtra,Facebook,"Called twice, no response",02/26/2026,test@gmail.com
+Karan Rao,karan.rao17@gmail.com,9811980765,Ahmedabad,Gujarat,Referral,Asked to reschedule demo call,2026-09-21,rahul@groweasy.ai
+Gaurav Desai,gaurav.desai18@gmail.com,+91 9848285503,Hyderabad,Telangana,Facebook,"Booking done, possession by early 2027",09-Aug-2026,rahul@groweasy.ai
+Rohit Desai,rohit.desai19@gmail.com,+91 9888406989,Kochi,Kerala,Referral,"Booking done, possession by early 2027",01/02/2026,rahul@groweasy.ai
+Unknown Lead,,,Hyderabad,Telangana,Eden Park Enquiry,Form submitted with no contact details,2026-04-22,test@gmail.com
+Anjali Singh,anjali.singh21@gmail.com,9852169044,Kochi,Kerala,Referral,Phone unreachable,11/07/2026,priya@groweasy.ai
+Ritu Rao,ritu.rao22@gmail.com,9838609087,Pune,Maharashtra,Walk-in,"Sale confirmed, possession expected by early 2027",2026-09-03,test@gmail.com
+Pooja Shah,pooja.shah23@gmail.com,9880993218,Ahmedabad,Gujarat,Referral,"Very interested, follow up Monday",11/20/2026,test@gmail.com
+Deepak Verma,deepak.verma24@gmail.com,9891178885,Bangalore,Karnataka,Eden Park Enquiry,Did not connect after 3 attempts,09-05-2026,test@gmail.com
+,kirti.reddy25@gmail.com,9815917225,Mumbai,Maharashtra,Meridian Tower Ads,Will call back next week,27-May-2026,rahul@groweasy.ai
+Mohit Malhotra,mohit.malhotra26@gmail.com,+91 9830005727 / 9127105448,Jaipur,Rajasthan,Facebook,Will call back next week,2026-02-04,test@gmail.com
+Vivek Desai,vivek.desai27@gmail.com,9857469942,Delhi,Delhi,Sarjapur Plots Form,"Booking done, possession by early 2027",22-02-2026,test@gmail.com
+Farah Shah,farah.shah28@gmail.com,9899913412,Kolkata,West Bengal,Meridian Tower Ads,Phone unreachable,07/26/2026,rahul@groweasy.ai
+Vikram Reddy,vikram.reddy29@gmail.com,9839920292,Chennai,Tamil Nadu,Sarjapur Plots Form,"Very interested, follow up Monday",04/10/2026,priya@groweasy.ai
+Sameer Verma,sameer.verma30@gmail.com,+91 9845059710,Delhi,Delhi,LinkedIn,No response to voicemail,02/01/2026,priya@groweasy.ai
+Swati Khan,swati.khan31@gmail.com,9835511941 / 9182269803,Kolkata,West Bengal,Google Ads,Not interested in our services,2026-10-13,test@gmail.com
+Mohit Menon,mohit.menon32@gmail.com,9899038359,Delhi,Delhi,Facebook,"Very interested, follow up Monday",06/20/2026,rahul@groweasy.ai
+Ritu Patel,ritu.patel33@gmail.com,9860888017,Mumbai,Maharashtra,Referral,"Sale confirmed, possession expected by early 2027",14-11-2026,rahul@groweasy.ai
+Pooja Menon,pooja.menon34@gmail.com,9869345683,Kolkata,West Bengal,Google Ads,No response to voicemail,08/15/2026,test@gmail.com
+Unknown Lead,,,Mumbai,Maharashtra,Referral,Form submitted with no contact details,04/03/2026,test@gmail.com
+Sameer Rao,sameer.rao36@gmail.com,+91 9861536717,Ahmedabad,Gujarat,Facebook,"Confirmed sale, paperwork in progress",23-12-2026,test@gmail.com
+Radhika Iyer,radhika.iyer37@gmail.com / radhika.iyer37alt@outlook.com,9843446826,Kolkata,West Bengal,Sarjapur Plots Form,Wants site visit this weekend,02-Sep-2026,rahul@groweasy.ai
+Rajat Mehta,rajat.mehta38@gmail.com,9869849511,Delhi,Delhi,Walk-in,Did not connect after 3 attempts,27-Sep-2026,test@gmail.com
+Lakshmi Verma,lakshmi.verma39@gmail.com,9820399639,Jaipur,Rajasthan,Walk-in,Wrong number,09-08-2026,test@gmail.com
+,deepak.nair40@gmail.com,+91 9818620650,Chennai,Tamil Nadu,Facebook,"Confirmed sale, paperwork in progress",23-04-2026,test@gmail.com
+Lakshmi Gupta,lakshmi.gupta41@gmail.com,9861053877,Kolkata,West Bengal,Google Ads,"Deal closed, onboarding in progress",2026-10-28,test@gmail.com
+Lakshmi Gupta,lakshmi.gupta42@gmail.com / lakshmi.gupta42alt@outlook.com,9846632757,Jaipur,Rajasthan,Referral,"Confirmed sale, paperwork in progress",16-04-2026,test@gmail.com
+Gaurav Shah,gaurav.shah43@gmail.com,+91 9885751409 / 9171968116,Ahmedabad,Gujarat,Varah Swamy Site Visit,"Interested in 2BHK, wants brochure",2026-10-13,test@gmail.com
+Divya Patel,divya.patel44@gmail.com,9847346970,Delhi,Delhi,Sarjapur Plots Form,"Payment completed, booking confirmed",07/11/2026,priya@groweasy.ai
+Meena Joshi,meena.joshi45@gmail.com,9843189803,Chennai,Tamil Nadu,Newspaper Ad,"Did not pick up, will retry",2026-01-25,test@gmail.com
+Simran Menon,simran.menon46@gmail.com / simran.menon46alt@outlook.com,9825372341 / 9151870192,Ahmedabad,Gujarat,Leads on Demand Campaign,Phone unreachable,20-10-2026,priya@groweasy.ai
+Nisha Patel,nisha.patel47@gmail.com,9850477742,Chennai,Tamil Nadu,Eden Park Enquiry,Requested payment plan details,04-12-2026,test@gmail.com
+Vivek Rao,vivek.rao48@gmail.com,9824165187,Jaipur,Rajasthan,Instagram,"Payment completed, booking confirmed",27-Aug-2026,rahul@groweasy.ai
+Rahul Shah,rahul.shah49@gmail.com,+91 9889520597,Jaipur,Rajasthan,Leads on Demand Campaign,Already purchased elsewhere,15-Jul-2026,test@gmail.com
+Unknown Lead,,,Ahmedabad,Gujarat,Google Ads,Form submitted with no contact details,11-Jan-2026,test@gmail.com
+Manoj Mehta,manoj.mehta51@gmail.com,9864549859,Mumbai,Maharashtra,Referral,"Booking done, possession by early 2027",03-04-2026,rahul@groweasy.ai
+Aditya Malhotra,aditya.malhotra52@gmail.com,9842655866,Pune,Maharashtra,Eden Park Enquiry,No longer looking to buy,13-12-2026,priya@groweasy.ai
+Rahul Bose,rahul.bose53@gmail.com,9843742830,Delhi,Delhi,Instagram,"Did not pick up, will retry",09-May-2026,test@gmail.com
+Radhika Shah,radhika.shah54@gmail.com,9889133014,Chennai,Tamil Nadu,Sarjapur Plots Form,Not interested in our services,09-Dec-2026,test@gmail.com
